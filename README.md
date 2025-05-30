@@ -13,7 +13,13 @@ A sophisticated AI-powered coding assistant with multi-model support, advanced c
 - **Anthropic**: Claude 3 Haiku, Sonnet, Opus
 - **Google**: Gemini Pro, Gemini Pro Vision
 - **Groq**: Llama2 70B, Mixtral 8x7B, Gemma 7B
-- **Ollama**: Local model support
+- **Ollama**: Local LLM support with complete privacy
+  - Llama 3.2 (Latest Llama model)
+  - Llama 2 Uncensored (Unrestricted responses)
+  - CodeLlama (Specialized for coding)
+  - Mistral 7B (High-performance 7B model)
+  - Mistral (Latest Mistral model)
+  - Stable Diffusion (Image generation)
 
 ### 💻 Advanced Coding Features
 - **Code Generation** - Generate code in any programming language
@@ -79,6 +85,7 @@ A sophisticated AI-powered coding assistant with multi-model support, advanced c
 - OpenAI API key (required)
 - Weather API key (optional - from OpenWeatherMap)
 - News API key (optional - from NewsAPI)
+- **Ollama** (optional - for local LLM support)
 
 ### Installation
 
@@ -95,12 +102,26 @@ cp .env.example .env
 # Edit .env with your API keys and database credentials
 ```
 
-3. **Initialize database:**
+3. **Setup Ollama (Optional - for local LLMs):**
+```bash
+# Install Ollama from https://ollama.ai
+# Pull recommended models automatically
+npm run ollama:setup
+
+# Or pull specific models
+npm run ollama:pull llama2-uncensored
+npm run ollama:pull mistral:7b
+
+# Check model status
+npm run ollama:status
+```
+
+4. **Initialize database:**
 ```bash
 npm run db:init
 ```
 
-4. **Start the application:**
+5. **Start the application:**
 ```bash
 # Start both frontend and backend
 npm run dev:full
@@ -110,7 +131,7 @@ npm run server  # Backend (port 3001)
 npm run dev     # Frontend (port 3000)
 ```
 
-5. **Open your browser:**
+6. **Open your browser:**
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:3001
 
@@ -120,6 +141,42 @@ npm run dev     # Frontend (port 3000)
 - [User Instructions](./INSTRUCTIONS.md) - Complete user guide
 - [API Documentation](./docs/API.md) - API endpoints reference
 - [Development Guide](./docs/DEVELOPMENT.md) - Contributing guidelines
+- [**Ollama Integration**](./docs/OLLAMA_INTEGRATION.md) - Local LLM setup and usage
+
+## 🏠 Local LLM Support with Ollama
+
+This application includes comprehensive **Ollama** integration for running powerful language models locally with complete privacy and no API costs.
+
+### 🎯 Supported Ollama Models
+- **llama3.2** - Latest Llama model with excellent performance
+- **llama2-uncensored** - Unrestricted Llama 2 for open conversations
+- **codellama** - Specialized for coding tasks and programming
+- **mistral:7b** - High-performance 7B parameter Mistral model
+- **mistral** - Latest Mistral model with advanced capabilities
+- **stable-diffusion** - Local image generation
+
+### ⚡ Quick Ollama Setup
+```bash
+# 1. Install Ollama from https://ollama.ai
+# 2. Pull all recommended models
+npm run ollama:setup
+
+# 3. Check installation status
+npm run ollama:status
+
+# 4. Start the application - Ollama models will appear in the model selector
+npm run dev:full
+```
+
+### 🛠️ Ollama Management Commands
+```bash
+npm run ollama:setup      # Pull all recommended models
+npm run ollama:status     # Check model installation status  
+npm run ollama:pull       # Pull specific model
+npm run ollama:help       # Show help information
+```
+
+For detailed setup instructions, troubleshooting, and advanced configuration, see [**Ollama Integration Guide**](./docs/OLLAMA_INTEGRATION.md).
 
 ## 🛠️ Technology Stack
 
