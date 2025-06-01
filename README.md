@@ -1,274 +1,335 @@
-# AI-Powered Coding Assistant
+# Lackadaisical Copilot - Privacy-First Coding Assistant
 
-A sophisticated AI-powered coding assistant with multi-model support, advanced coding features, web search capabilities, and real-time collaboration tools.
+A comprehensive AI-powered coding assistant that runs locally with Ollama for complete privacy, or optionally connects to cloud AI providers. Built by Lackadaisical Security with privacy, security, and developer productivity in mind.
 
-**Developed by Lackadaisical Security**
+## 🔒 Privacy-First Design
 
-![AI Chatbot](https://img.shields.io/badge/React-18.2.0-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue) ![Node.js](https://img.shields.io/badge/Node.js-Express-green) ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.7.4-black) ![License](https://img.shields.io/badge/License-Proprietary-red.svg)
+- **Local AI Processing**: Uses Ollama by default for complete privacy
+- **No Data Sharing**: Everything runs on your machine
+- **Optional Cloud Models**: Connect to external APIs only when needed
+- **Encrypted Storage**: All data is encrypted at rest
+- **Zero Telemetry**: No usage data is collected or transmitted
 
-## ✨ Features
+## ✨ New Features
 
-### 🤖 Multi-Model AI Support
-- **OpenAI**: GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4 Vision
-- **Anthropic**: Claude 3 Haiku, Sonnet, Opus
-- **Google**: Gemini Pro, Gemini Pro Vision
-- **Groq**: Llama2 70B, Mixtral 8x7B, Gemma 7B
-- **Ollama**: Local LLM support with complete privacy
-  - Llama 3.2 (Latest Llama model)
-  - Llama 2 Uncensored (Unrestricted responses)
-  - CodeLlama (Specialized for coding)
-  - Mistral 7B (High-performance 7B model)
-  - Mistral (Latest Mistral model)
-  - Stable Diffusion (Image generation)
+- **Enhanced Image Generation**: Multi-provider support with Automatic1111 and Ollama integration
+- **Model Deduplication**: Clean, deduplicated model lists for better user experience
+- **Improved UI/UX**: Better provider status reporting and enhanced error handling
+- **Local Model Optimization**: Optimized storage and management for Ollama models
 
-### 💻 Advanced Coding Features
-- **Code Generation** - Generate code in any programming language
-- **Code Analysis** - Analyze and explain existing code with quality metrics
-- **File Operations** - Create, edit, and delete files through AI suggestions
-- **Bug Fixing** - Intelligent debugging and error resolution
-- **Test Generation** - Automated unit test creation
-- **Documentation** - Generate comprehensive code documentation
-- **Monaco Editor** - Full-featured code editor with IntelliSense
-- **Code Quality Dashboard** - Real-time code quality assessment
-- **Snippet Library** - Searchable, categorized code snippets
-
-### 🔍 Enhanced Capabilities
-- **Web Search** - Real-time web search integration (Bing/DuckDuckGo)
-- **Image Generation** - Create images using DALL-E 3 and Stable Diffusion
-- **Image Analysis** - Analyze and describe uploaded images
-- **Code Examples** - Search for coding solutions and examples
-- **Voice Coding** - Voice-driven development interface
-- **Visual Code Generation** - Generate code from mockups
-
-### ⚡ Real-time Features
-- **Streaming Responses** - Live streaming of AI responses using Socket.IO
-- **Model Switching** - Change AI models during conversations
-- **Connection Status** - Real-time connection monitoring
-- **Typing Indicators** - Live typing status
-- **Collaborative Coding** - Real-time code collaboration
-
-### 🌐 External Integrations
-- **Weather Data** - Get current weather for any location
-- **News Updates** - Fetch latest news or search specific topics
-- **Wikipedia Search** - Access Wikipedia knowledge base
-- **Document Analysis** - Upload and analyze documents with AI
-
-### 🔐 Enterprise Features
-- **Authentication System** - Secure JWT-based authentication
-- **🛡️ Comprehensive Privacy Protection** - Enterprise-grade privacy system
-  - **Multi-Level Anonymization** - Personal data detection and removal
-  - **End-to-End Encryption** - Data encrypted in transit and at rest
-  - **Anonymous Sessions** - Privacy-preserving user sessions
-  - **Privacy-Aware Rate Limiting** - Intelligent traffic management
-  - **Emergency Data Deletion** - Complete data removal on demand
-  - **GDPR Compliance** - Full compliance with privacy regulations
-- **Admin Panel** - Comprehensive user and system management
-- **Role-Based Access** - User, Premium, and Admin roles
-- **Activity Logging** - Complete audit trail
-- **Productivity Analytics** - Developer productivity insights
-
-### 🎨 Modern Interface
-- **Mode Switching** - Toggle between Chat and Code Assistant modes
-- **Model Selector** - Easy AI model selection and configuration
-- **Beautiful UI** - Modern gradient design with smooth animations
-- **Responsive Design** - Works perfectly on all devices
-- **Real-time Status** - Live connection and model indicators
-- **Dark/Light Theme** - Customizable theme support
-
-## 🚀 Quick Start
+## 🚀 Quick Start with Ollama (Recommended)
 
 ### Prerequisites
+- Node.js 18+ and npm
+- Windows, macOS, or Linux
 
-- Node.js 18+ 
-- PostgreSQL 14+
-- npm or yarn
-- OpenAI API key (required)
-- Weather API key (optional - from OpenWeatherMap)
-- News API key (optional - from NewsAPI)
-- **Ollama** (optional - for local LLM support)
-
-### Installation
-
-1. **Clone and setup:**
+### 1. Clone and Install
 ```bash
-git clone <your-repo>
-cd ai-copilot
+git clone <repository-url>
+cd lackadaisical-copilot
 npm install
 ```
 
-2. **Configure environment:**
+### 2. Set Up Ollama (Automated)
 ```bash
-cp .env.example .env
-# Edit .env with your API keys and database credentials
+npm run setup-ollama
 ```
 
-3. **Setup Ollama (Optional - for local LLMs):**
+This script will:
+- Check if Ollama is installed
+- Start the Ollama service
+- Pull recommended AI models
+- Configure your environment
+- Test the setup
+
+### 3. Start the Application
 ```bash
-# Install Ollama from https://ollama.ai
-# Pull recommended models automatically
-npm run ollama:setup
-
-# Or pull specific models
-npm run ollama:pull llama2-uncensored
-npm run ollama:pull mistral:7b
-
-# Check model status
-npm run ollama:status
-```
-
-4. **Initialize database:**
-```bash
-npm run db:init
-```
-
-5. **Start the application:**
-```bash
-# Start both frontend and backend
-npm run dev:full
-
-# Or start separately:
-npm run server  # Backend (port 3001)
-npm run dev     # Frontend (port 3000)
-```
-
-6. **Open your browser:**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:3001
-
-## 📚 Documentation
-
-- [Setup Guide](./SETUP.md) - Detailed installation and configuration
-- [User Instructions](./INSTRUCTIONS.md) - Complete user guide
-- [API Documentation](./docs/API.md) - API endpoints reference
-- [Development Guide](./docs/DEVELOPMENT.md) - Contributing guidelines
-- [**Ollama Integration**](./docs/OLLAMA_INTEGRATION.md) - Local LLM setup and usage
-
-## 🏠 Local LLM Support with Ollama
-
-This application includes comprehensive **Ollama** integration for running powerful language models locally with complete privacy and no API costs.
-
-### 🎯 Supported Ollama Models
-- **llama3.2** - Latest Llama model with excellent performance
-- **llama2-uncensored** - Unrestricted Llama 2 for open conversations
-- **codellama** - Specialized for coding tasks and programming
-- **mistral:7b** - High-performance 7B parameter Mistral model
-- **mistral** - Latest Mistral model with advanced capabilities
-- **stable-diffusion** - Local image generation
-
-### ⚡ Quick Ollama Setup
-```bash
-# 1. Install Ollama from https://ollama.ai
-# 2. Pull all recommended models
-npm run ollama:setup
-
-# 3. Check installation status
-npm run ollama:status
-
-# 4. Start the application - Ollama models will appear in the model selector
 npm run dev:full
 ```
 
-### 🛠️ Ollama Management Commands
-```bash
-npm run ollama:setup      # Pull all recommended models
-npm run ollama:status     # Check model installation status  
-npm run ollama:pull       # Pull specific model
-npm run ollama:help       # Show help information
+### 4. Open Your Browser
+Navigate to `http://localhost:3000`
+
+## 🤖 AI Models
+
+### Local Models (Ollama) - Default
+
+#### General Purpose Models
+- **Llama 3.2** - Latest and most capable model (2GB)
+- **Llama 4 Maverick** - Advanced reasoning capabilities (244GB)
+- **Mistral 7B** - High-performance general purpose (4.1GB)
+- **Phi-3 Mini** - Compact reasoning model (2.2GB)
+- **Llama 2 Uncensored** - Unrestricted content (3.8GB)
+- **Dolphin LLaMA3 Omost** - Enhanced conversational model (3.9GB)
+- **Neural Chat** - Optimized for natural conversations (4.3GB)
+- **Nous Hermes** - Knowledge-focused model (3.9GB)
+
+#### Coding Models
+- **Code Llama** - Specialized for code generation (3.8GB)
+- **DeepSeek Coder** - Advanced code assistant (2.7GB)
+- **WizardCoder** - Expert programming assistant (4.7GB)
+- **CodeQwen** - Multi-language code generation (3.9GB)
+- **Stable Code** - Code completion specialist (3.3GB)
+
+#### Image & Multimodal Models
+- **LLaVA** - Vision capabilities for image analysis (4.7GB)
+- **Bakllava** - Enhanced visual reasoning (5.1GB) 
+- **Moondream** - Specialized visual analysis (1.9GB)
+
+#### Creative & Specialized Models
+- **poluramus/llama-3.2ft_flux-prompting_v0.5** - Flux AI prompt generation (3.3GB)
+- **brxce/stable-diffusion-prompt-generator** - Optimized Stable Diffusion prompts (2.9GB)
+- **impactframes/dolphin_llama3_omost** - Advanced visual descriptions (3.9GB)
+- **Yi** - Multi-purpose Chinese-English model (2.6GB)
+- **Qwen** - Advanced bilingual assistant (3.1GB)
+- **Starling** - Instruction-optimized model (4.2GB)
+- **Vicuna** - Conversational specialist (3.9GB)
+- **Samantha** - Personality-enhanced assistant (3.6GB)
+- **Zephyr** - Balanced performance and efficiency (3.3GB)
+
+### Cloud Models (Optional)
+- **OpenAI** - GPT-4, GPT-3.5 Turbo
+- **Anthropic** - Claude 3 family
+- **Google** - Gemini Pro, Gemini Flash
+- **Groq** - Ultra-fast inference
+
+## 📋 Features
+
+### 🎯 Core AI Features
+- **Chat Interface** - Natural language conversations
+- **Code Assistant** - Generate, explain, and debug code
+- **Model Selection** - Easy switching between AI models
+- **Streaming Responses** - Real-time AI responses
+- **Privacy Protection** - Comprehensive data protection
+- **Image Generation** - Multi-provider image creation with Ollama enhancement
+
+### 💻 Development Tools
+- **Code Editor** - Integrated Monaco editor
+- **Terminal** - Built-in terminal interface
+- **File Explorer** - Project file management
+- **Snippet Library** - Code snippet storage
+- **Quality Dashboard** - Code analysis and metrics
+
+### 🔧 Advanced Features
+- **Voice Coding** - Speech-to-code functionality
+- **Productivity Tracking** - Development metrics
+- **Admin Panel** - System management
+- **API Integration** - External service connections
+- **Local Image Generation** - Create images with Automatic1111 and Ollama
+
+### Local AI Integration
+- **Local AI Integration**: Run entirely on your machine with Ollama for complete privacy and no API costs
+- **Multi-Model Support**: Use local Ollama models or connect to OpenAI, Anthropic, Google, and other AI providers
+- **Code Intelligence**: Get code suggestions, explanations, and automated refactoring
+
+## 🛠️ Manual Setup
+
+### Environment Configuration
+Create a `.env` file:
+```env
+# Server Configuration
+PORT=3001
+FRONTEND_URL=http://localhost:3000
+
+# Ollama Configuration (Local AI)
+DEFAULT_AI_PROVIDER=ollama
+DEFAULT_AI_MODEL=llama3.2:latest
+OLLAMA_BASE_URL=http://localhost:11434
+
+# Optional Cloud API Keys
+OPENAI_API_KEY=your_openai_key_here
+ANTHROPIC_API_KEY=your_anthropic_key_here
+GOOGLE_API_KEY=your_google_key_here
+
+# Privacy & Security
+ENABLE_PRIVACY_MODE=true
+ENABLE_ENCRYPTION=true
 ```
 
-For detailed setup instructions, troubleshooting, and advanced configuration, see [**Ollama Integration Guide**](./docs/OLLAMA_INTEGRATION.md).
+### Manual Ollama Installation
+1. Download from [ollama.ai](https://ollama.ai/download)
+2. Install and start the service:
+   ```bash
+   ollama serve
+   ```
+3. Pull recommended models:
+   ```bash
+   ollama pull llama3.2
+   ollama pull codellama
+   ollama pull mistral
+   ollama pull phi3-mini
+   ollama pull llava
+   ```
 
-## 🛠️ Technology Stack
+## 🔧 Development
 
-### Frontend
-- React 18 with TypeScript
-- Socket.IO Client for real-time communication
-- Monaco Editor for code editing
-- Chart.js for analytics visualization
-- React Router for navigation
+### Scripts
+```bash
+# Setup
+npm run setup-ollama          # Automated Ollama setup
+npm install                   # Install dependencies
 
-### Backend
-- Node.js with Express
-- Socket.IO for WebSocket connections
-- PostgreSQL database
-- JWT authentication
-- Multiple AI provider integrations
+# Development
+npm run dev                   # Start frontend only
+npm run server               # Start backend only
+npm run dev:full             # Start both frontend and backend
 
-### Security
-- Bcrypt password hashing
-- JWT token authentication
-- Rate limiting
-- Input validation
-- SQL injection prevention
-- XSS protection
+# Build
+npm run build                # Build for production
+npm run start                # Start production server
 
-## 📱 Key Features Overview
+# Ollama Management
+npm run ollama:status        # Check Ollama models
+npm run ollama:setup         # Pull recommended models
+npm run ollama:pull <model>  # Pull specific model
+```
 
-### Code Quality Analysis
-- Cyclomatic complexity analysis
-- Maintainability index
-- Test coverage tracking
-- Security vulnerability scanning
-- Performance bottleneck detection
+### Project Structure
+```
+ai-copilot/
+├── src/                     # Frontend React app
+│   ├── components/          # UI components
+│   ├── contexts/           # React contexts
+│   └── utils/              # Utility functions
+├── server/                  # Backend Node.js app
+│   ├── routes/             # API routes
+│   ├── services/           # Business logic
+│   ├── models/             # Database models
+│   └── middleware/         # Express middleware
+├── scripts/                # Setup and utility scripts
+└── docs/                   # Documentation
+```
 
-### Productivity Tools
-- File explorer with advanced search
-- Integrated terminal
-- Voice coding support
-- Productivity analytics dashboard
-- Code snippet management
+## 🔒 Privacy & Security
 
-### AI Capabilities
-- Multi-model support
-- Context-aware suggestions
-- Natural language to code
-- Code translation between languages
-- Intelligent refactoring
+### Local Processing
+- All AI processing happens on your machine with Ollama
+- No data is sent to external servers by default
+- Complete control over your code and conversations
+
+### Data Protection
+- End-to-end encryption for all stored data
+- Secure session management
+- Privacy-focused request handling
+- Audit logging for security monitoring
+
+### Optional Cloud Usage
+- Cloud AI providers are opt-in only
+- API keys stored locally and encrypted
+- Configurable fallback chains
+- Rate limiting and quota management
+
+## 🌟 Key Benefits
+
+### For Developers
+- **Privacy-First**: Keep your code completely private
+- **No Latency**: Local AI responses are instant
+- **Offline Capable**: Works without internet connection
+- **Cost-Effective**: No API fees for local models
+- **Customizable**: Full control over AI models and behavior
+
+### For Teams
+- **Self-Hosted**: Deploy on your own infrastructure
+- **Compliance**: Meet data privacy requirements
+- **Scalable**: Add more models and resources as needed
+- **Auditable**: Complete visibility into AI interactions
 
 ## 🤝 Contributing
 
-This is proprietary software owned by Lackadaisical Security. For internal contributors:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-1. Create a feature branch
-2. Make your changes
-3. Submit a pull request
-4. Ensure all tests pass
+## 📄 License & Copyright
 
-## 📄 License
+© 2025 Lackadaisical Security. All Rights Reserved.
 
-This project is proprietary software owned by **Lackadaisical Security**.
+This software and its documentation are proprietary and confidential.
+Unauthorized use, reproduction, or distribution is strictly prohibited.
 
-**Copyright © 2025 Lackadaisical Security. All Rights Reserved.**
+Website: [https://lackadaisical-security.com](https://lackadaisical-security.com)  
+GitHub: [https://github.com/Lackadaisical-Security](https://github.com/Lackadaisical-Security)
 
-This software and associated documentation files are the proprietary and confidential property of Lackadaisical Security. This Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
-
-**RESTRICTIONS:**
-- No redistribution, copying, or distribution allowed
-- No reverse engineering or decompilation permitted
-- Authorized use only under separate license agreement
-- Confidential and proprietary information - no disclosure to third parties
-
-For licensing inquiries, please contact: licensing@lackadaisicalsecurity.com
-
-## 👨‍💻 Author
-
-**Lackadaisical Security**
-- AI-Powered Development Solutions
-- Advanced Coding Assistant Technology
-- Enterprise Software Development
+See the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
 
-For support and inquiries:
-- Internal Support: support@lackadaisicalsecurity.com
-- Documentation: See [INSTRUCTIONS.md](./INSTRUCTIONS.md)
-- Bug Reports: Use internal issue tracker
+### Common Issues
 
-## 🔮 Roadmap
+**Ollama not starting:**
+```bash
+# Check if Ollama is installed
+ollama --version
 
-See [ADDITIONAL_CODING_ENHANCEMENTS.md](./ADDITIONAL_CODING_ENHANCEMENTS.md) for the complete development roadmap and future features.
+# Start Ollama service
+ollama serve
+
+# Check status
+curl http://localhost:11434/api/version
+```
+
+**Model not found:**
+```bash
+# List installed models
+ollama list
+
+# Pull missing model
+ollama pull llama3.2
+```
+
+**Port conflicts:**
+- Frontend: Change port in `vite.config.js`
+- Backend: Set `PORT` in `.env`
+- Ollama: Set `OLLAMA_BASE_URL` in `.env`
+
+### Getting Help
+- Check the [Issues](../../issues) page
+- Review the [Documentation](docs/)
+- Join our community discussions
+
+## 🔗 Links
+
+- [Ollama Models](https://ollama.ai/library)
+- [OpenAI API](https://platform.openai.com/api-keys)
+- [Anthropic API](https://console.anthropic.com/)
+- [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ---
 
-**Version**: 1.0.0  
-**Last Updated**: December 2024
+**Built with ❤️ for privacy-conscious developers**
+
+## Getting Started
+
+### Option 1: Quick Start with Ollama (Recommended)
+
+For a completely local, private AI experience:
+
+1. Install [Ollama](https://ollama.ai/download)
+2. Run the setup script: `.\start-with-ollama.ps1`
+3. Open http://localhost:3000 in your browser
+
+For more details, see [Ollama Integration Guide](OLLAMA_INTEGRATION.md).
+
+### Option 2: Standard Setup
+
+```bash
+# Server Configuration
+PORT=3001
+FRONTEND_URL=http://localhost:3000
+
+# Ollama Configuration (Local AI)
+DEFAULT_AI_PROVIDER=ollama
+DEFAULT_AI_MODEL=llama3.2:latest
+OLLAMA_BASE_URL=http://localhost:11434
+
+# Optional Cloud API Keys
+OPENAI_API_KEY=your_openai_key_here
+ANTHROPIC_API_KEY=your_anthropic_key_here
+GOOGLE_API_KEY=your_google_key_here
+
+# Privacy & Security
+ENABLE_PRIVACY_MODE=true
+ENABLE_ENCRYPTION=true
+```
