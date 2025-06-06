@@ -292,7 +292,7 @@ We welcome contributions to Lackadaisical Copilot! Please read our [Contributing
 
 ### Join the Lackadaisical Community
 - 💬 [Discord Server](https://discord.gg/B7arxEc3)
-- 🐦 [Twitter @LackadaisicalSec](https://twitter.com/lackadaisec)
+- 🐦 [Twitter @LackadaiSec](https://twitter.com/lackadaisec)
 - 📧 [Email Support](mailto:support@lackadaisical.security)
 - 🌐 [Website](https://lackadaisical.security)
 
