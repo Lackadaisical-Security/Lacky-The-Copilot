@@ -292,7 +292,7 @@ We welcome contributions to Lackadaisical Copilot! Please read our [Contributing
 
 ### Join the Lackadaisical Community
 - 💬 [Discord Server](https://discord.gg/lackadaisical-security)
-- 🐦 [Twitter @LackadaisicalSec](https://twitter.com/lackadaisicalsec)
+- 🐦 [Twitter @LackadaisicalSec](https://twitter.com/lackadaisec)
 - 📧 [Email Support](mailto:support@lackadaisical.security)
 - 🌐 [Website](https://lackadaisical.security)
 
@@ -325,7 +325,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ### Stay Updated
 - ⭐ Star this repository for updates
 - 👀 Watch for new releases
-- 📱 Follow [@LackadaisicalSec](https://twitter.com/lackadaisicalsec)
+- 📱 Follow [@LackadaisicalSec](https://twitter.com/lackadaisec)
 
 ---
 
