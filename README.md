@@ -1,335 +1,334 @@
-# Lackadaisical Copilot - Privacy-First Coding Assistant
+# 🤖 Lackadaisical Copilot - Privacy-First AI Development Assistant
+*by Lackadaisical Security*
 
-A comprehensive AI-powered coding assistant that runs locally with Ollama for complete privacy, or optionally connects to cloud AI providers. Built by Lackadaisical Security with privacy, security, and developer productivity in mind.
+> **Meet Lacky the Copilot** - Your personal AI coding assistant that prioritizes your privacy while delivering exceptional development support with 22+ local AI models.
 
-## 🔒 Privacy-First Design
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue)](https://www.typescriptlang.org/)
+[![Privacy-First](https://img.shields.io/badge/Privacy-First-9c27b0)](https://lackadaisical.security)
+[![Local Models](https://img.shields.io/badge/Local%20Models-22+-4caf50)](https://ollama.ai)
 
-- **Local AI Processing**: Uses Ollama by default for complete privacy
-- **No Data Sharing**: Everything runs on your machine
-- **Optional Cloud Models**: Connect to external APIs only when needed
-- **Encrypted Storage**: All data is encrypted at rest
-- **Zero Telemetry**: No usage data is collected or transmitted
+## 🌟 What Makes Lackadaisical Copilot Special?
 
-## ✨ New Features
+**Lackadaisical Copilot** is the only AI development assistant that puts your privacy first while delivering enterprise-grade features. Unlike cloud-dependent alternatives, **Lacky** runs 22+ AI models locally, ensuring your code never leaves your machine unless you explicitly choose otherwise.
 
-- **Enhanced Image Generation**: Multi-provider support with Automatic1111 and Ollama integration
-- **Model Deduplication**: Clean, deduplicated model lists for better user experience
-- **Improved UI/UX**: Better provider status reporting and enhanced error handling
-- **Local Model Optimization**: Optimized storage and management for Ollama models
+```
+┌─────────────────────────────────────────────────────────────────┐
+│           🔒 Privacy-First AI Development Platform              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐         │
+│  │    Lacky    │    │  22+ Local  │    │  Advanced   │         │
+│  │ Personality │ ❤️ │ AI Models   │ 🔒 │  Security   │         │
+│  │  Assistant  │    │ (Ollama)    │    │  Analysis   │         │
+│  └─────────────┘    └─────────────┘    └─────────────┘         │
+│                                                                 │
+│  Your Code Never Leaves Your Machine (Unless You Want It To)   │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-## 🚀 Quick Start with Ollama (Recommended)
+## 🚀 Key Features
+
+### 🤖 Lacky the Copilot - Your AI Companion
+- **Personality-Driven**: Helpful, security-conscious AI assistant
+- **Privacy-Aware**: Always reminds you about privacy choices
+- **Multi-Model Expert**: Seamlessly switches between 22+ local models
+- **Security-Focused**: Built-in vulnerability detection and fixes
+
+### 🔒 Privacy-First Architecture
+- **Local Processing**: 22+ Ollama models run entirely on your machine
+- **Zero Cloud Dependency**: Full functionality without internet
+- **Encrypted Storage**: AES-256-GCM encryption for all data
+- **Anonymous Analytics**: No personal data collection
+
+### 💻 Advanced Code Intelligence
+- **Real-time Analysis**: Instant code quality and security assessment
+- **Multi-Language Support**: JavaScript, TypeScript, Python, Java, C++, Go, Rust, and more
+- **Security Scanning**: OWASP Top 10 vulnerability detection
+- **Performance Optimization**: Bottleneck identification and suggestions
+
+### 🌐 Enterprise-Grade Features
+- **Self-Hosted**: Complete control over your deployment
+- **Audit Trails**: Comprehensive logging for compliance
+- **Role-Based Access**: Admin, premium, user, and guest roles
+- **API Integration**: RESTful APIs for custom integrations
+
+## 📦 Installation & Quick Start
 
 ### Prerequisites
-- Node.js 18+ and npm
-- Windows, macOS, or Linux
+- **Node.js** 18+ and npm
+- **Ollama** installed and running (for local AI models)
+- **Git** for cloning the repository
 
-### 1. Clone and Install
+### 1. Clone & Install
 ```bash
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/lackadaisical-security/lackadaisical-copilot.git
 cd lackadaisical-copilot
+
+# Install dependencies
 npm install
+
+# Install Ollama models (recommended)
+ollama pull llama3.2
+ollama pull codellama
+ollama pull mistral
 ```
 
-### 2. Set Up Ollama (Automated)
+### 2. Environment Setup
 ```bash
-npm run setup-ollama
+# Copy environment template
+cp .env.example .env
+
+# Required: Add your API keys (optional for cloud models)
+OPENAI_API_KEY=your_openai_key_here    # Optional
+ANTHROPIC_API_KEY=your_anthropic_key   # Optional
+
+# Optional: External service APIs
+WEATHER_API_KEY=your_weather_key       # For weather integration
+NEWS_API_KEY=your_news_key            # For news integration
+
+# Lackadaisical Security settings
+PRIVACY_LEVEL=3                        # 1=Basic, 2=Enhanced, 3=Maximum
+LACKY_PERSONALITY=enabled              # Enable Lacky's personality
+LOCAL_MODELS_ONLY=true                 # Use only local models by default
 ```
 
-This script will:
-- Check if Ollama is installed
-- Start the Ollama service
-- Pull recommended AI models
-- Configure your environment
-- Test the setup
-
-### 3. Start the Application
+### 3. Start Lackadaisical Copilot
 ```bash
+# Option 1: Full stack development
 npm run dev:full
+
+# Option 2: Run components separately
+npm run dev      # Frontend (port 3000)
+npm run server   # Backend (port 3001)
+
+# Option 3: Privacy-first mode (local models only)
+npm run dev:private
 ```
 
-### 4. Open Your Browser
-Navigate to `http://localhost:3000`
+### 4. Meet Lacky! 🎉
+Open your browser to `http://localhost:3000` and start chatting with **Lacky the Copilot**!
 
-## 🤖 AI Models
+## 🎯 Usage Examples
 
-### Local Models (Ollama) - Default
+### Chat with Lacky
+```
+You: "Help me create a secure login component in React"
 
-#### General Purpose Models
-- **Llama 3.2** - Latest and most capable model (2GB)
-- **Llama 4 Maverick** - Advanced reasoning capabilities (244GB)
-- **Mistral 7B** - High-performance general purpose (4.1GB)
-- **Phi-3 Mini** - Compact reasoning model (2.2GB)
-- **Llama 2 Uncensored** - Unrestricted content (3.8GB)
-- **Dolphin LLaMA3 Omost** - Enhanced conversational model (3.9GB)
-- **Neural Chat** - Optimized for natural conversations (4.3GB)
-- **Nous Hermes** - Knowledge-focused model (3.9GB)
+Lacky: "🔒 I'd love to help you create a secure login component! 
+Let me generate one with proper security measures including:
+- Input validation and sanitization
+- Password strength requirements  
+- CSRF protection
+- Rate limiting considerations
 
-#### Coding Models
-- **Code Llama** - Specialized for code generation (3.8GB)
-- **DeepSeek Coder** - Advanced code assistant (2.7GB)
-- **WizardCoder** - Expert programming assistant (4.7GB)
-- **CodeQwen** - Multi-language code generation (3.9GB)
-- **Stable Code** - Code completion specialist (3.3GB)
-
-#### Image & Multimodal Models
-- **LLaVA** - Vision capabilities for image analysis (4.7GB)
-- **Bakllava** - Enhanced visual reasoning (5.1GB) 
-- **Moondream** - Specialized visual analysis (1.9GB)
-
-#### Creative & Specialized Models
-- **poluramus/llama-3.2ft_flux-prompting_v0.5** - Flux AI prompt generation (3.3GB)
-- **brxce/stable-diffusion-prompt-generator** - Optimized Stable Diffusion prompts (2.9GB)
-- **impactframes/dolphin_llama3_omost** - Advanced visual descriptions (3.9GB)
-- **Yi** - Multi-purpose Chinese-English model (2.6GB)
-- **Qwen** - Advanced bilingual assistant (3.1GB)
-- **Starling** - Instruction-optimized model (4.2GB)
-- **Vicuna** - Conversational specialist (3.9GB)
-- **Samantha** - Personality-enhanced assistant (3.6GB)
-- **Zephyr** - Balanced performance and efficiency (3.3GB)
-
-### Cloud Models (Optional)
-- **OpenAI** - GPT-4, GPT-3.5 Turbo
-- **Anthropic** - Claude 3 family
-- **Google** - Gemini Pro, Gemini Flash
-- **Groq** - Ultra-fast inference
-
-## 📋 Features
-
-### 🎯 Core AI Features
-- **Chat Interface** - Natural language conversations
-- **Code Assistant** - Generate, explain, and debug code
-- **Model Selection** - Easy switching between AI models
-- **Streaming Responses** - Real-time AI responses
-- **Privacy Protection** - Comprehensive data protection
-- **Image Generation** - Multi-provider image creation with Ollama enhancement
-
-### 💻 Development Tools
-- **Code Editor** - Integrated Monaco editor
-- **Terminal** - Built-in terminal interface
-- **File Explorer** - Project file management
-- **Snippet Library** - Code snippet storage
-- **Quality Dashboard** - Code analysis and metrics
-
-### 🔧 Advanced Features
-- **Voice Coding** - Speech-to-code functionality
-- **Productivity Tracking** - Development metrics
-- **Admin Panel** - System management
-- **API Integration** - External service connections
-- **Local Image Generation** - Create images with Automatic1111 and Ollama
-
-### Local AI Integration
-- **Local AI Integration**: Run entirely on your machine with Ollama for complete privacy and no API costs
-- **Multi-Model Support**: Use local Ollama models or connect to OpenAI, Anthropic, Google, and other AI providers
-- **Code Intelligence**: Get code suggestions, explanations, and automated refactoring
-
-## 🛠️ Manual Setup
-
-### Environment Configuration
-Create a `.env` file:
-```env
-# Server Configuration
-PORT=3001
-FRONTEND_URL=http://localhost:3000
-
-# Ollama Configuration (Local AI)
-DEFAULT_AI_PROVIDER=ollama
-DEFAULT_AI_MODEL=llama3.2:latest
-OLLAMA_BASE_URL=http://localhost:11434
-
-# Optional Cloud API Keys
-OPENAI_API_KEY=your_openai_key_here
-ANTHROPIC_API_KEY=your_anthropic_key_here
-GOOGLE_API_KEY=your_google_key_here
-
-# Privacy & Security
-ENABLE_PRIVACY_MODE=true
-ENABLE_ENCRYPTION=true
+Since you're using privacy mode, I'll process this entirely 
+on your local machine using CodeLlama. Here's what I recommend..."
 ```
 
-### Manual Ollama Installation
-1. Download from [ollama.ai](https://ollama.ai/download)
-2. Install and start the service:
-   ```bash
-   ollama serve
-   ```
-3. Pull recommended models:
-   ```bash
-   ollama pull llama3.2
-   ollama pull codellama
-   ollama pull mistral
-   ollama pull phi3-mini
-   ollama pull llava
-   ```
+### Code Analysis
+```javascript
+// Upload your code file or paste it directly
+function handleLogin(username, password) {
+  // Lacky will automatically detect security issues:
+  // ❌ No input validation
+  // ❌ No rate limiting
+  // ❌ Plain text password handling
+  // ✅ Lacky provides fixes for each issue
+}
+```
+
+### Privacy Settings
+```
+Privacy Level 1 (Basic):     Standard encryption
+Privacy Level 2 (Enhanced):  Local processing preferred  
+Privacy Level 3 (Maximum):   Local-only processing 🔒
+```
+
+## 🏗️ Architecture Overview
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                 Lackadaisical Copilot Architecture             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Frontend (React + TypeScript)                                 │
+│  ├─ Lacky Chat Interface                                       │
+│  ├─ Code Editor with Analysis                                  │
+│  ├─ Privacy Controls                                           │
+│  └─ Model Selection                                            │
+│                              │                                  │
+│                        Socket.IO                               │
+│                              │                                  │
+│  Backend (Node.js + Express)                                   │
+│  ├─ Lacky AI Coordination Service                              │
+│  ├─ Privacy Manager                                            │
+│  ├─ Code Quality Analyzer                                      │
+│  └─ Security Scanner                                           │
+│                              │                                  │
+│  AI Providers                                                  │
+│  ├─ Ollama (22+ Local Models) ⭐ PRIMARY                       │
+│  ├─ OpenAI (Optional)                                          │
+│  ├─ Anthropic (Optional)                                       │
+│  └─ Google Gemini (Optional)                                   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [🏆 Competitive Analysis](./docs/COMPETITIVE_ANALYSIS.md) | How Lackadaisical Copilot compares to GitHub Copilot, Cursor, and others |
+| [🔍 System Analysis](./docs/COMPREHENSIVE_SYSTEM_ANALYSIS.md) | Technical architecture and implementation details |
+| [🚀 Feature Deep Dive](./docs/FEATURE_ANALYSIS_DEEP_DIVE.md) | Comprehensive feature analysis and capabilities |
+| [📝 API Documentation](./docs/API.md) | RESTful API endpoints and integration guide |
+| [🔒 Security Guide](./docs/SECURITY.md) | Security features and best practices |
+| [🚀 Deployment Guide](./docs/DEPLOYMENT.md) | Production deployment instructions |
+
+## 🤝 API Endpoints
+
+### Lacky Chat API
+```typescript
+POST /api/lacky/chat
+{
+  "message": "How do I implement OAuth2?",
+  "conversationId": "uuid-here",
+  "model": "codellama", // Optional, defaults to best local model
+  "privacyLevel": 3     // 1-3, defaults to user preference
+}
+```
+
+### Code Analysis API
+```typescript
+POST /api/lacky/analyze
+{
+  "code": "function example() { ... }",
+  "language": "javascript",
+  "privacyMode": true // Always analyze locally when true
+}
+```
+
+### Privacy Settings API
+```typescript
+GET /api/lacky/privacy/settings
+POST /api/lacky/privacy/settings
+{
+  "privacyLevel": 3,
+  "localOnly": true,
+  "dataRetentionDays": 30
+}
+```
 
 ## 🔧 Development
 
-### Scripts
-```bash
-# Setup
-npm run setup-ollama          # Automated Ollama setup
-npm install                   # Install dependencies
-
-# Development
-npm run dev                   # Start frontend only
-npm run server               # Start backend only
-npm run dev:full             # Start both frontend and backend
-
-# Build
-npm run build                # Build for production
-npm run start                # Start production server
-
-# Ollama Management
-npm run ollama:status        # Check Ollama models
-npm run ollama:setup         # Pull recommended models
-npm run ollama:pull <model>  # Pull specific model
-```
-
 ### Project Structure
 ```
-ai-copilot/
-├── src/                     # Frontend React app
-│   ├── components/          # UI components
-│   ├── contexts/           # React contexts
-│   └── utils/              # Utility functions
-├── server/                  # Backend Node.js app
-│   ├── routes/             # API routes
-│   ├── services/           # Business logic
-│   ├── models/             # Database models
-│   └── middleware/         # Express middleware
-├── scripts/                # Setup and utility scripts
-└── docs/                   # Documentation
+lackadaisical-copilot/
+├── src/                      # Frontend React app
+│   ├── components/           # React components
+│   ├── services/            # API and Socket.IO services
+│   └── styles/              # CSS and styling
+├── server/                   # Backend Node.js app
+│   ├── routes/              # Express routes
+│   ├── services/            # Core business logic
+│   └── middleware/          # Express middleware
+├── docs/                    # Documentation
+└── scripts/                 # Utility scripts
 ```
 
-## 🔒 Privacy & Security
+### Available Scripts
+```bash
+# Development
+npm run dev              # Frontend development server
+npm run server          # Backend development server  
+npm run dev:full        # Both frontend and backend
+npm run dev:private     # Privacy-first local-only mode
 
-### Local Processing
-- All AI processing happens on your machine with Ollama
-- No data is sent to external servers by default
-- Complete control over your code and conversations
+# Building
+npm run build           # Build frontend for production
+npm run build:server    # Build backend for production
 
-### Data Protection
-- End-to-end encryption for all stored data
-- Secure session management
-- Privacy-focused request handling
-- Audit logging for security monitoring
+# Testing  
+npm test               # Run test suite
+npm run test:coverage  # Test coverage report
 
-### Optional Cloud Usage
-- Cloud AI providers are opt-in only
-- API keys stored locally and encrypted
-- Configurable fallback chains
-- Rate limiting and quota management
+# Privacy & Security
+npm run security:audit # Security vulnerability scan
+npm run privacy:check  # Privacy compliance check
+```
 
-## 🌟 Key Benefits
-
-### For Developers
-- **Privacy-First**: Keep your code completely private
-- **No Latency**: Local AI responses are instant
-- **Offline Capable**: Works without internet connection
-- **Cost-Effective**: No API fees for local models
-- **Customizable**: Full control over AI models and behavior
-
-### For Teams
-- **Self-Hosted**: Deploy on your own infrastructure
-- **Compliance**: Meet data privacy requirements
-- **Scalable**: Add more models and resources as needed
-- **Auditable**: Complete visibility into AI interactions
-
-## 🤝 Contributing
+### Contributing
+We welcome contributions to Lackadaisical Copilot! Please read our [Contributing Guide](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/lacky-improvement`
+3. Commit your changes: `git commit -m 'Add amazing feature for Lacky'`
+4. Push to the branch: `git push origin feature/lacky-improvement`
+5. Open a Pull Request
 
-## 📄 License & Copyright
+## 🌟 Why Choose Lackadaisical Copilot?
 
-© 2025 Lackadaisical Security. All Rights Reserved.
+### vs GitHub Copilot
+| Feature | GitHub Copilot | Lackadaisical Copilot |
+|---------|----------------|------------------------|
+| **Privacy** | ❌ All code sent to cloud | ✅ Local processing by default |
+| **Model Choice** | ❌ OpenAI only | ✅ 22+ models available |
+| **Cost** | 💰 $10-39/month | ✅ Self-hosted = $0 recurring |
+| **Security Analysis** | ⚠️ Basic | ✅ Comprehensive OWASP scanning |
+| **Personality** | ❌ Generic responses | ✅ Lacky's helpful personality |
 
-This software and its documentation are proprietary and confidential.
-Unauthorized use, reproduction, or distribution is strictly prohibited.
+### vs Cursor
+| Feature | Cursor | Lackadaisical Copilot |
+|---------|--------|------------------------|
+| **Local Processing** | ❌ Cloud-only | ✅ 22+ local models |
+| **Privacy** | ❌ All data in cloud | ✅ Privacy-first design |
+| **Editor Lock-in** | ❌ Requires Cursor IDE | ✅ Web-based + future extensions |
+| **Cost** | 💰 $20-40/month | ✅ One-time setup cost |
 
-Website: [https://lackadaisical-security.com](https://lackadaisical-security.com)  
-GitHub: [https://github.com/Lackadaisical-Security](https://github.com/Lackadaisical-Security)
+## 🎉 Community & Support
 
-See the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-### Common Issues
-
-**Ollama not starting:**
-```bash
-# Check if Ollama is installed
-ollama --version
-
-# Start Ollama service
-ollama serve
-
-# Check status
-curl http://localhost:11434/api/version
-```
-
-**Model not found:**
-```bash
-# List installed models
-ollama list
-
-# Pull missing model
-ollama pull llama3.2
-```
-
-**Port conflicts:**
-- Frontend: Change port in `vite.config.js`
-- Backend: Set `PORT` in `.env`
-- Ollama: Set `OLLAMA_BASE_URL` in `.env`
+### Join the Lackadaisical Community
+- 💬 [Discord Server](https://discord.gg/lackadaisical-security)
+- 🐦 [Twitter @LackadaisicalSec](https://twitter.com/lackadaisicalsec)
+- 📧 [Email Support](mailto:support@lackadaisical.security)
+- 🌐 [Website](https://lackadaisical.security)
 
 ### Getting Help
-- Check the [Issues](../../issues) page
-- Review the [Documentation](docs/)
-- Join our community discussions
+- 📖 Check our [Documentation](./docs/)
+- 🐛 [Report Issues](https://github.com/lackadaisical-security/lackadaisical-copilot/issues)
+- 💡 [Feature Requests](https://github.com/lackadaisical-security/lackadaisical-copilot/discussions)
+- ❓ [Ask Lacky](http://localhost:3000) - Start the app and ask Lacky directly!
 
-## 🔗 Links
+## 📄 License
 
-- [Ollama Models](https://ollama.ai/library)
-- [OpenAI API](https://platform.openai.com/api-keys)
-- [Anthropic API](https://console.anthropic.com/)
-- [Google AI Studio](https://makersuite.google.com/app/apikey)
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Ollama Team** - For making local AI models accessible
+- **React & Node.js Communities** - For excellent frameworks
+- **Security Research Community** - For OWASP and security best practices
+- **Privacy Advocates** - For inspiring our privacy-first approach
+
+## 🚀 What's Next?
+
+### Roadmap
+- 🔌 **VS Code Extension** - Native IDE integration
+- 📱 **Mobile App** - Lackadaisical Copilot on mobile
+- 🌍 **Internationalization** - Multi-language support
+- 🤖 **Custom Models** - Train Lacky on your codebase
+- 🏢 **Enterprise Features** - Advanced admin controls
+
+### Stay Updated
+- ⭐ Star this repository for updates
+- 👀 Watch for new releases
+- 📱 Follow [@LackadaisicalSec](https://twitter.com/lackadaisicalsec)
 
 ---
 
-**Built with ❤️ for privacy-conscious developers**
+**Lacky says**: *"Welcome to privacy-first AI development! I'm here to help you code better while keeping your secrets safe. Your code, your rules, your privacy - always."* 🤖🔒
 
-## Getting Started
-
-### Option 1: Quick Start with Ollama (Recommended)
-
-For a completely local, private AI experience:
-
-1. Install [Ollama](https://ollama.ai/download)
-2. Run the setup script: `.\start-with-ollama.ps1`
-3. Open http://localhost:3000 in your browser
-
-For more details, see [Ollama Integration Guide](OLLAMA_INTEGRATION.md).
-
-### Option 2: Standard Setup
-
-```bash
-# Server Configuration
-PORT=3001
-FRONTEND_URL=http://localhost:3000
-
-# Ollama Configuration (Local AI)
-DEFAULT_AI_PROVIDER=ollama
-DEFAULT_AI_MODEL=llama3.2:latest
-OLLAMA_BASE_URL=http://localhost:11434
-
-# Optional Cloud API Keys
-OPENAI_API_KEY=your_openai_key_here
-ANTHROPIC_API_KEY=your_anthropic_key_here
-GOOGLE_API_KEY=your_google_key_here
-
-# Privacy & Security
-ENABLE_PRIVACY_MODE=true
-ENABLE_ENCRYPTION=true
-```
+*Made with ❤️ by [Lackadaisical Security](https://lackadaisical.security)*
