@@ -291,7 +291,7 @@ We welcome contributions to Lackadaisical Copilot! Please read our [Contributing
 ## 🎉 Community & Support
 
 ### Join the Lackadaisical Community
-- 💬 [Discord Server](https://discord.gg/lackadaisical-security)
+- 💬 [Discord Server](https://discord.gg/B7arxEc3)
 - 🐦 [Twitter @LackadaisicalSec](https://twitter.com/lackadaisec)
 - 📧 [Email Support](mailto:support@lackadaisical.security)
 - 🌐 [Website](https://lackadaisical.security)
