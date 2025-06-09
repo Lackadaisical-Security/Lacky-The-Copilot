@@ -596,8 +596,9 @@ For enterprise support and custom development:
   </p>
   <p>
     <a href="https://lackadaisical-security.com">Website</a> •
-    <a href="https://twitter.com/lackycop">Twitter</a> •
-    <a href="https://discord.gg/lackycop">Discord</a> •
+    <a href="https://x.com/lackadaisec">Twitter</a> •
+    <a href="https://www.instagram.com/lackadaisicalsec">Twitter</a> •
+    <a href="https://discord.gg/invite/B7arxEc3">Discord</a> •
     <a href="https://github.com/lackadaisical-security">GitHub</a>
   </p>
 </div>
