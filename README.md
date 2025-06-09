@@ -561,43 +561,6 @@ Please report security vulnerabilities to: security@lackadaisical-security.com
 
 ---
 
-## 🤝 Contributing
-
-We love contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### How to Contribute
-
-1. **Fork the Repository**
-2. **Create a Feature Branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit Your Changes**
-   ```bash
-   git commit -m 'feat: add amazing feature'
-   ```
-4. **Push to Your Fork**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
-
-### Development Guidelines
-
-- Follow TypeScript best practices
-- Write tests for new features
-- Update documentation
-- Follow conventional commits
-- Ensure CI passes
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🆘 Support
 
 ### Getting Help
