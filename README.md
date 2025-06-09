@@ -1,4 +1,4 @@
-# 🤖 Lacky The Copilot - The Privacy-First AI Development Assistant
+# Lacky The Copilot - The Privacy-First AI Development Assistant
 
 <div align="center">
   <img src="https://i0.wp.com/lackadaisical-security.com/shop/wp-content/uploads/2025/06/88917249-fa35-4895-a36c-cbd398638da0-1749428633220.png?fit=1024%2C1024&ssl=1)](https://github.com/Lackadaisical-Security/ai-copilot/blob/main/LackyCopilot.png" alt="Lacky Copilot Logo" width="200"/>
