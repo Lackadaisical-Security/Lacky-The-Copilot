@@ -141,7 +141,7 @@ Lacky ML Database (server/data/lacky_ml.db)
 ### 1. Authentication System
 **Default Admin Account**:
 - **Email**: `admin@lackadaisical-security.com`
-- **Password**: `LackyAdmin123!`
+- **Password**: `Admin123`
 - **Role**: admin (full Lacky ML access)
 
 **User Roles Available**:
@@ -224,7 +224,7 @@ npm run dev:full
 1. Navigate to http://localhost:3000
 2. Login with admin credentials:
    - Email: `admin@lackadaisical-security.com`
-   - Password: `LackyAdmin123!`
+   - Password: `Admin`
 3. Test chat functionality
 4. Try URL image training
 5. Explore ML API endpoints
@@ -234,7 +234,7 @@ npm run dev:full
 # Login and get token
 $loginResponse = Invoke-RestMethod -Uri "http://localhost:3001/api/auth/login" -Method POST -Headers @{"Content-Type"="application/json"} -Body (@{
     email = "admin@lackadaisical-security.com"
-    password = "LackyAdmin123!"
+    password = "Admin"
 } | ConvertTo-Json)
 
 $token = $loginResponse.tokens.accessToken
