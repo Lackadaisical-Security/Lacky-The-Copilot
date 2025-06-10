@@ -286,7 +286,7 @@ Invoke-RestMethod -Uri "http://localhost:3001/api/ml/lacky/health" -Method GET -
 
 ### Database Statistics
 - **Total Tables**: 11 specialized ML tables
-- **AI Models**: 5 operational models sources available from: OpenAI, Google Gemini, Anthropic from Cloud - 28+ Local Models with Ollama - Custom Local Lacky AI
+- **AI Models**: 6 operational model sources available from: OpenAI, Google Gemini, Anthropic, xAI/Grok from Cloud - 28+ Local Models with Ollama - Custom Local Lacky AI
 - **API Endpoints**: 15+ fully functional endpoints
 - **User Roles**: 4-tier permission system
 - **Security Features**: 8+ production security measures
