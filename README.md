@@ -9,7 +9,6 @@
   ![Development Time](https://img.shields.io/badge/Core%20Built-5%20DAYS-ff69b4?style=for-the-badge&logo=rocket&logoColor=white)
   ![Status](https://img.shields.io/badge/Status-EVOLVING-00ff00?style=for-the-badge&logo=atom&logoColor=white)
   
-  <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" width="100">
   
   ### ⚡ Where Time Bends Around Productivity ⚡
   
