@@ -2,7 +2,7 @@
 
 <div align="center">
    <img src="https://i0.wp.com/lackadaisical-security.com/shop/wp-content/uploads/2025/06/88917249-fa35-4895-a36c-cbd398638da0-1749428633220.png?fit=1024%2C1024&ssl=1)](https://github.com/Lackadaisical-Security/ai-copilot/blob/main/LackyCopilot.png" alt="Lacky Copilot Logo" width="200"/>
-  
+   
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)](https://www.typescriptlang.org/)
   [![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
@@ -663,6 +663,9 @@ For enterprise support and custom development:
 <div align="center">
   <p>
     <strong>Built with ❤️ by <a href="https://lackadaisical-security.com">Lackadaisical Security</a></strong>
+  </p>
+   <p>
+    <img src="https://github.com/Lackadaisical-Security/Lacky-The-Copilot/blob/main/Lacky%20and%20Operator.png" alt="Lacky and Operator" width="200"/>
   </p>
   <p>
     <em>"We may be lackadaisical about corporate nonsense, but we're serious about your success."</em>
