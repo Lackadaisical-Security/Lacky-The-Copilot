@@ -53,7 +53,7 @@
 
 ### 📊 System Statistics
 
-- **Codebase**: 99,372 total files, 1,800 source files, 670,000+ lines of code
+- **Codebase**: 99,372 total files, 1,800 source files, 670,000+ lines of source code
 - **Architecture**: Microservices-ready monolith
 - **Performance**: Supports 500+ concurrent users
 - **Completeness**: 99.8% feature complete
