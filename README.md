@@ -1,7 +1,7 @@
- ##  Lacky The Copilot - The Privacy-First AI Development Assistant
+#  Lacky Copilot - The Privacy-First AI Development Assistant
 
 <div align="center">
-  <img src="https://i0.wp.com/lackadaisical-security.com/shop/wp-content/uploads/2025/06/88917249-fa35-4895-a36c-cbd398638da0-1749428633220.png?fit=1024%2C1024&ssl=1)](https://github.com/Lackadaisical-Security/ai-copilot/blob/main/LackyCopilot.png" alt="Lacky Copilot Logo" width="200"/>
+   <img src="https://i0.wp.com/lackadaisical-security.com/shop/wp-content/uploads/2025/06/88917249-fa35-4895-a36c-cbd398638da0-1749428633220.png?fit=1024%2C1024&ssl=1)](https://github.com/Lackadaisical-Security/ai-copilot/blob/main/LackyCopilot.png" alt="Lacky Copilot Logo" width="200"/>
   
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)](https://www.typescriptlang.org/)
@@ -40,20 +40,20 @@
 
 ## 🎯 Overview
 
-**Lacky The Copilot** is a comprehensive, privacy-first AI development assistant that runs entirely on your local machine. Unlike cloud-based alternatives, your code never leaves your computer, ensuring complete privacy and security while providing access to 22+ local AI models and optional cloud integrations.
+**Lacky Copilot** is a comprehensive, privacy-first AI development assistant that runs entirely on your local machine. Unlike cloud-based alternatives, your code never leaves your computer, ensuring complete privacy and security while providing access to 39+ local AI models and optional cloud integrations.
 
 ### 🏆 What Makes Us Different
 
 - **100% Local Processing**: Your code stays on your machine
 - **No Subscriptions**: One-time purchase, use forever
-- **37+ AI Models**: 22+ local via Ollama, 15+ cloud APIs
+- **54+ AI Models**: 39+ local via Ollama, 15+ cloud APIs
 - **Full IDE Experience**: Not just a plugin, but a complete development environment
 - **Military-Grade Security**: End-to-end encryption, zero telemetry
 - **Lightning Fast**: 50ms local response time vs 200-500ms for cloud solutions
 
 ### 📊 System Statistics
 
-- **Codebase**: 500+ files, 100,000+ lines of code
+- **Codebase**: 99,372 files, 667,551+ lines of source code
 - **Architecture**: Microservices-ready monolith
 - **Performance**: Supports 500+ concurrent users
 - **Completeness**: 99.8% feature complete
@@ -65,7 +65,7 @@
 ## ✨ Key Features
 
 ### 🤖 AI Capabilities
-- **Multi-Model Support**: Choose from 37+ AI models
+- **Multi-Model Support**: Choose from 54+ AI models
 - **Local Models**: Llama 3, Mistral, CodeLlama, Phi-3, and more via Ollama
 - **Cloud Models**: OpenAI GPT-4, Anthropic Claude 3, Google Gemini (optional)
 - **Intelligent Routing**: Automatically selects the best model for your task
@@ -108,6 +108,8 @@
 
 ## 🏗️ System Architecture
 
+> **Note**: This is an AI development assistant. The "health monitoring" components refer to **system performance monitoring** (monitoring AI models, server health, response times, etc.), not medical/healthcare monitoring.
+
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                    LACKY COPILOT ARCHITECTURE                           │
@@ -116,6 +118,8 @@
 │  FRONTEND (React + TypeScript + Vite)                                  │
 │  ┌─────────────────────────────────────────────────────────────────┐   │
 │  │  Components  │  Services  │  Hooks  │  Contexts  │    Utils     │   │
+│  │  • MonitoringDashboard (System Performance)                      │   │
+│  │  • AIModelMonitor (Model Health & Performance)                   │   │
 │  └─────────────────────────────────────────────────────────────────┘   │
 │                          ↕ HTTPS/WebSocket                              │
 │                                                                         │
@@ -135,7 +139,7 @@
 │  AI INTEGRATION                                                         │
 │  ┌──────────────┬──────────────┬──────────────┬────────────────────┐   │
 │  │   Ollama     │    OpenAI    │  Anthropic   │  Google Gemini     │   │
-│  │  (22+ Local) │   (GPT-4)    │  (Claude 3)  │    (Optional)      │   │
+│  │  (39+ Local) │   (GPT-4)    │  (Claude 3)  │    (Optional)      │   │
 │  └──────────────┴──────────────┴──────────────┴────────────────────┘   │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
@@ -163,7 +167,7 @@ For detailed architecture documentation, see [COMPREHENSIVE_SYSTEM_ANALYSIS.md](
 - **WebSocket**: Socket.IO
 
 ### AI Integration
-- **Local Models**: Ollama (22+ models)
+- **Local Models**: Ollama (39+ models)
 - **Cloud APIs**: OpenAI, Anthropic, Google, Groq
 - **Model Management**: Custom orchestration layer
 - **Context Management**: Advanced memory system
@@ -363,6 +367,38 @@ For advanced configuration options, see [docs/CONFIGURATION.md](./docs/CONFIGURA
 
 Our API follows RESTful principles with comprehensive documentation available at `/api/docs` when running.
 
+#### Authentication
+```http
+POST /api/auth/login
+POST /api/auth/register
+POST /api/auth/logout
+POST /api/auth/refresh
+```
+
+#### Chat Operations
+```http
+POST /api/chat/message
+GET  /api/chat/conversations
+GET  /api/chat/messages/:conversationId
+DELETE /api/chat/conversation/:id
+```
+
+#### AI Models
+```http
+GET  /api/ai/models
+POST /api/ai/complete
+POST /api/ai/analyze
+GET  /api/ai/status
+```
+
+#### File Management
+```http
+GET    /api/files/list
+POST   /api/files/upload
+GET    /api/files/download/:id
+DELETE /api/files/:id
+```
+
 For complete API documentation, see [docs/API.md](./docs/API.md).
 
 ---
@@ -561,6 +597,43 @@ Please report security vulnerabilities to: security@lackadaisical-security.com
 
 ---
 
+## 🤝 Contributing
+
+We love contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+### How to Contribute
+
+1. **Fork the Repository**
+2. **Create a Feature Branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit Your Changes**
+   ```bash
+   git commit -m 'feat: add amazing feature'
+   ```
+4. **Push to Your Fork**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Write tests for new features
+- Update documentation
+- Follow conventional commits
+- Ensure CI passes
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 ## 🆘 Support
 
 ### Getting Help
@@ -596,9 +669,8 @@ For enterprise support and custom development:
   </p>
   <p>
     <a href="https://lackadaisical-security.com">Website</a> •
-    <a href="https://x.com/lackadaisec">Twitter</a> •
-    <a href="https://www.instagram.com/lackadaisicalsec">Twitter</a> •
-    <a href="https://discord.gg/invite/B7arxEc3">Discord</a> •
+    <a href="https://twitter.com/lackycop">Twitter</a> •
+    <a href="https://discord.gg/lackycop">Discord</a> •
     <a href="https://github.com/lackadaisical-security">GitHub</a>
   </p>
 </div>
