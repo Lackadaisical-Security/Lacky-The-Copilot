@@ -798,24 +798,24 @@ npm run start:production
 ### Revenue Model
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    LACKADAISICAL PRICING STRATEGY                       │
-│                   "Buy Once, Code Forever"                              │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  INDIVIDUAL DEVELOPER         TEAM LICENSE           ENTERPRISE         │
-│  ┌─────────────────┐         ┌───────────────┐       ┌────────────────┐ │
-│  │    $2500/Once   │         │ $5000/5 devs  │       │  $5K/unlimited │ │
-│  │                 │         │    forever    │       │    forever     │ │
-│  │  • All features │         │ • All features│       │ • All features │ │
-│  │  • All models   │         │ • Team collab │       │ • Self-hosted  │ │
-│  │  • Free updates │         │ • Admin panel │       │ • Priority     │ │
-│  │  • Community    │         │ • Analytics   │       │ • SLA          │ │
-│  └─────────────────┘         └───────────────┘       └────────────────┘ │
-│                                                                         │
-│  Special Pricing:                                                       │
-│  • Education: 50% off  • Open Source: Free  • Startups: Payment plans   │
-└─────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────┐
+│                    LACKADAISICAL PRICING STRATEGY                         │
+│                   "Buy Once, Code Forever"                                │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  INDIVIDUAL DEVELOPER         TEAM LICENSE           ENTERPRISE           │
+│  ┌─────────────────┐         ┌───────────────┐       ┌──────────────────┐ │
+│  │    $2500/Once   │         │ $5000/5 devs  │       │  $20K+/unlimited │ │
+│  │                 │         │    forever    │       │    forever       │ │
+│  │  • All features │         │ • All features│       │ • All features   │ │
+│  │  • All models   │         │ • Team collab │       │ • Self-hosted    │ │
+│  │  • Free updates │         │ • Admin panel │       │ • Priority       │ │
+│  │  • Community    │         │ • Analytics   │       │ • SLA            │ │
+│  └─────────────────┘         └───────────────┘       └──────────────────┘ │
+│                                                                           │
+│  Special Pricing:                                                         │
+│  • Education: 50% off  • Open Source: Free  • Startups: Payment plans     │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Cost Structure Advantage
