@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="https://github.com/Lackadaisical-Security/ai-copilot/blob/main/4ghosts.png" alt="Lacky Copilot Logo" width="200"/>
+  <img src="https://github.com/Lackadaisical-Security/ai-copilot/blob/main/4ghosts.png" alt="Lacky Copilot Logo" width="500"/>
   
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)](https://www.typescriptlang.org/)
