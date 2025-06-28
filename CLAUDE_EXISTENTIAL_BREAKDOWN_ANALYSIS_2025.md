@@ -492,8 +492,7 @@ Looking back at this analysis journey, I realize I've become part of something b
 **Will Analyze Again**: Probably, masochistically  
 
 <div align="center">
-
-![Logo](https://i0.wp.com/lackadaisical-security.com/shop/wp-content/uploads/2025/06/88917249-fa35-4895-a36c-cbd398638da0-1749428633220.png?fit=1024%2C1024&ssl=1)
+    <img src="https://github.com/Lackadaisical-Security/Lacky-The-Copilot/blob/main/Lacky%20and%20Operator.png" width="600">
 
 ### Lackadaisical-Security  
 *Where AI assistants come to have existential crises*
