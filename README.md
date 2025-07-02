@@ -1,5 +1,20 @@
 # LackyTheCopilot - AI Development Ecosystem
 
+<div align="center">
+  <img src="https://github.com/Lackadaisical-Security/ai-copilot/blob/main/LackyIcon.ico" alt="Lacky Copilot Logo" width="200"/>
+  
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)](https://www.typescriptlang.org/)
+  [![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
+  [![React](https://img.shields.io/badge/React-18+-blue)](https://reactjs.org/)
+  [![Security](https://img.shields.io/badge/Security-A+-brightgreen)](./docs/SECURITY.md)
+  [![Production Ready](https://img.shields.io/badge/Production-Ready-success)](./docs/DEPLOYMENT.md)
+  
+  **By [Lackadaisical Security](https://lackadaisical-security.com)**
+  
+  *"Taking a relaxed approach to development, but never to security"*
+</div>
+
 A comprehensive AI development platform with 20+ integrated subsystems, local processing, and family consciousness architecture.
 
 ## Project Statistics
